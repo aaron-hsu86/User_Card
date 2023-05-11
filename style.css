@@ -1,0 +1,122 @@
+/* Checking solution for practice
+I am uncertain on how to properly move the Profile Pic and other icons to their correct location
+checking other methods to display the developer roles/titles
+Maybe check other methods on displaying the text */
+
+/* from solution, adding in CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+/* Solution had an extra container I didn't consider */
+.container {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    /* width: 1000px; */
+    /* height: 300px; */
+    /* margin: 0 auto;
+    background-color:red;
+    display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between;
+    overflow: hidden; */
+    
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+.banner {
+    /* width: 500px;
+    height: 75px;
+    background-color: lightblue;
+    display: flex; */
+    background-color: #17a2b8;
+    height: 125px;
+    margin-bottom: 70px;
+}
+
+#Profile_Pic{
+    /* scale: 40%;
+    position:absolute;
+    top: 10px; */
+    border-radius: 50%;
+    background-color: #fff;
+    height: 170px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.text {
+    /* width: 100%;
+    height: 225px;
+    background-color: white;
+    padding: 10px;
+    padding-top: 5px; */
+    padding: 20px;
+}
+/* h1 {
+    width: 100%;
+    display: block;
+} */
+/* #marker, #gear_icon{
+    scale: 25%;
+} */
+/* these two could have been merged into one
+however, after reading the solution, they could have just been given the same class as well */
+/* #marker {
+    height: 20px;
+}
+#gear_icon{
+    height: 20px;
+} */
+
+/* Solution adjusted icon size via height, and tied both to the same class */
+.icon-s{
+    height: 20px;
+}
+.location {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* No longer relevant for overly complicated silliness
+.titles {
+    width: 300px;
+    display:flex;
+    list-style-type: " | ";
+    justify-content:space-around;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+.titles li:first-child{
+    list-style-type:none;
+} */
+/* p{
+    margin: 0px;
+    margin-left: 10px;
+} */
+/* #id{
+    width: 30px;
+} */
+
+.text h1, 
+.location,
+.text p {
+    margin: 20px 0px;
+}
